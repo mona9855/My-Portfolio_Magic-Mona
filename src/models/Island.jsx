@@ -55,6 +55,10 @@ const Island = ({isRotating, setIsRotating, setCurrentStage ,...props}) => {
   }
 
   const handleKeyDown = (e) => {
+    if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+      e.stopPropagation();
+    }
+
     if(e.key === 'ArrowLeft') {
       if(!isRotating) setIsRotating(true);
       islandRef.current.rotation.y += 0.01 * Math.PI;
