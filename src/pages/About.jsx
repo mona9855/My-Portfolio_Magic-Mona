@@ -20,6 +20,9 @@ const About = () => {
           websites made with passion. Making efficient, user friendly and
           responsive websites is my number 1️⃣ goal.
         </p>
+        <p>
+        ❝ Whenever I code, I just lose the sense of time.❤️ ❞
+        </p>
       </div>
 
       <div className="py-10 flex flex-col">
@@ -42,7 +45,8 @@ const About = () => {
         </div>
       </div>
 
-      <div className="py-16">
+      {/* My Work Experience starts here: */}
+      {/* <div className="py-16">
         <h3 className="subhead-text">Work Experience</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
           <p>
@@ -90,7 +94,8 @@ const About = () => {
           ))}
         </VerticalTimeline>
         </div>
-      </div>
+      </div> */}
+      {/* My Work Experience ends here */}
 
       <hr className="border-slate-200"/>
       <CTA></CTA>

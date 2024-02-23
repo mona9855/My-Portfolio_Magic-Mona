@@ -38,7 +38,10 @@ const Projects = () => {
 
               <div className="mt-5 flex flex-col">
                 <h4 className="text-2xl font-poppins font-semibold">{project.name}</h4>
-                <p className="mt-2 text-slate-500 ">{project.description}</p>
+                <p className="mt-2 text-slate-500">{project.description}</p>
+                <div className="mt-2 flex justify-center items-center">
+                  <img className="object-contain" src={project.imageUrl} alt={project.name} />
+                </div>
                 <div className="mt-5 flex items-center gap-2 font-poppins">
                   <Link 
                     to={project.link}
