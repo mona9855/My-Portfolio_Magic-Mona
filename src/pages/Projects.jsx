@@ -2,7 +2,9 @@ import React from "react";
 import { projects } from "../constants";
 import { Link } from "react-router-dom";
 import CTA from "../components/CTA";
-import { arrow } from "../assets/icons";
+import { motion } from "framer-motion";
+import githubIcon from '../assets/images/github.png'
+
 
 const Projects = () => {
   return (
@@ -39,19 +41,36 @@ const Projects = () => {
               <div className="mt-5 flex flex-col">
                 <h4 className="text-2xl font-poppins font-semibold">{project.name}</h4>
                 <p className="mt-2 text-slate-500">{project.description}</p>
-                <div className="mt-2 flex justify-center items-center">
+                <motion.div 
+                  whileHover={{ scale: 1.1 }}
+                  initial={{ opacity: 0, x: -100, scale: 0.5 }}
+                  animate={{ opacity: 1, x: 0, scale: 1 }}
+                  transition={{
+                    duration: 2,
+                    delay: 0.1,
+                    ease: [0.5, 0.71, 1, 1.5],
+                  }}
+                  className="mt-2 flex justify-center items-center">
                   <img className="object-contain" src={project.imageUrl} alt={project.name} />
-                </div>
-                <div className="mt-5 flex items-center gap-2 font-poppins">
+                </motion.div>
+                <div className="mt-5 flex items-center gap-2 font-poppins justify-between ">
                   <Link 
-                    to={project.link}
+                    to={project.gitHubLink}
+                    target='_blank'
+                    rel="noopener noreferrer"
+                    className="font-semibold text-blue-600 flex gap-1 items-center mb-1">
+                     <img src={githubIcon} alt="gitHub icon" className="w-[20px] h-[20px]"/>
+                     <span>GitHub Link ➡️</span>
+                    </Link>
+                    
+                    <Link 
+                    to={project.liveLink}
                     target='_blank'
                     rel="noopener noreferrer"
                     className="font-semibold text-blue-600">
-                    Live Link
+                    ✨Live Link ➡️
                     </Link>
-                    <img src={arrow} alt="arrow"
-                    className="w-4 h-4 object-contain" />
+                    
                 </div>
               </div>
             </div>

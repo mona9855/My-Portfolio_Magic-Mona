@@ -119,7 +119,9 @@ export const projects = [
         theme: 'btn-back-red',
         name: 'Hey Shirts',
         description: 'MY first 3D website, that allows you to design your own shirt!, by choosing your preferred color. You can even choose any photo that you prefer, and then you can print it fully on it, or as a logo.',
-        link: 'https://github.com/mona9855/Hey-Shirts',
+        gitHubLink: 'https://github.com/mona9855/Hey-Shirts',
+        liveLink: 'https://hey-shirts.vercel.app/',
+
     },
     {
         iconUrl: gpt,
@@ -127,7 +129,8 @@ export const projects = [
         theme: 'btn-back-blue',
         name: 'GPT3 Assistant',
         description: "This project was done by converting a Figma design into a live amazing website. It's about understanding and learning the power of GPT3 OpenAI.",
-        link: 'https://github.com/mona9855/GPT3-Assistant',
+        gitHubLink: 'https://github.com/mona9855/GPT3-Assistant',
+        liveLink: 'https://gpt3-assistant.vercel.app/',
     },
     {
         iconUrl: gym,
@@ -135,7 +138,8 @@ export const projects = [
         theme: 'btn-back-pink',
         name: 'Fit Club',
         description: "This website is for a Gym project, that shows all of its advantages and why to choose them.",
-        link: 'https://github.com/mona9855/Fit-Club',
+        gitHubLink: 'https://github.com/mona9855/Fit-Club',
+        liveLink: 'https://fit-club-alpha.vercel.app/',
     },
     
 ];
