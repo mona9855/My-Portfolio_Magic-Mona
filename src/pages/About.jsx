@@ -7,7 +7,7 @@ import CTA from "../components/CTA";
 const About = () => {
   return (
     <section className="max-container">
-      <h1 className="head-text">
+      <h1 className="head-text animate__animated animate__flipInX">
         Hello, I'm{" "}
         <span className="blue-gradient_text font-semibold drop-shadow">
           Mona

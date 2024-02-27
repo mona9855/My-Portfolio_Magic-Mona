@@ -111,7 +111,7 @@ const Home = () => {
         className="w-10 h-10 cursor-pointer object-contain"
         onClick={() => setIsPlayingMusic(!isPlayingMusic)}/>
       </div>
-      <div className="absolute bottom-[10vh] sm:left-[40vw] left-[25vw] px-2 py-1 rounded text-black neo-brutalism-white">
+      <div className="absolute bottom-[10vh] sm:left-[40vw] left-[25vw] px-2 py-1 rounded text-black neo-brutalism-white animate__animated animate__heartBeat">
         <p>⬅️Scroll to view more.➡️</p>
       </div>
     </section>

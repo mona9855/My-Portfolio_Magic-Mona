@@ -6,13 +6,13 @@ import { TbLetterW } from "react-icons/tb";
 
 const SocialLinks = () => {
   return (
-    <div className="flex gap-3 mt-1">
+    <div className="flex gap-3 mt-2">
       <a
         href="https://www.linkedin.com/in/mona-magdy-300b03234/"
         target="_blank"
         rel="noreferrer"
         title="Linkedin"
-        className="p-1 rounded bg-blue-500" 
+        className="p-1 rounded bg-blue-500 animate__animated animate__bounce" 
       >
         <FaLinkedin size={30} color="white" className="cursor-pointer" />
       </a>
@@ -22,7 +22,7 @@ const SocialLinks = () => {
         target="_blank"
         rel="noreferrer"
         title="GitHub"
-        className="p-1 rounded bg-black"
+        className="p-1 rounded bg-black animate__animated animate__bounce"
       >
         <FaGithub size={30} color="white" className="cursor-pointer" />
       </a>
@@ -32,7 +32,7 @@ const SocialLinks = () => {
         target="_blank"
         rel="noreferrer"
         title="Upwork"
-        className="p-1 rounded bg-green-700"
+        className="p-1 rounded bg-green-700 animate__animated animate__bounce"
       >
         <SiUpwork size={30} color="white" className="cursor-pointer" />
       </a>
@@ -41,7 +41,7 @@ const SocialLinks = () => {
         href="https://wuzzuf.net/me/mona-magdy-b0eb2207a6?utm_medium=other&utm_source=referral"
         target="_blank"
         rel="noreferrer"
-        className="p-1 rounded bg-blue-900"
+        className="p-1 rounded bg-blue-900 animate__animated animate__bounce"
       >
         <TbLetterW
           size={30}

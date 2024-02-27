@@ -43,14 +43,7 @@ const Projects = () => {
                 <p className="mt-2 text-slate-500">{project.description}</p>
                 <motion.div 
                   whileHover={{ scale: 1.1 }}
-                  initial={{ opacity: 0, x: -100, scale: 0.5 }}
-                  animate={{ opacity: 1, x: 0, scale: 1 }}
-                  transition={{
-                    duration: 2,
-                    delay: 0.1,
-                    ease: [0.5, 0.71, 1, 1.5],
-                  }}
-                  className="mt-2 flex justify-center items-center">
+                  className="mt-2 flex justify-center items-center animate__animated animate__bounceInLeft">
                   <img className="object-contain" src={project.imageUrl} alt={project.name} />
                 </motion.div>
                 <div className="mt-5 flex items-center gap-2 font-poppins justify-between ">
