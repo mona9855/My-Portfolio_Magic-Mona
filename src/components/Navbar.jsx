@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import cv from "../assets/MonaMagdyResume.pdf"
 
 const Navbar = () => {
   return (
@@ -11,7 +12,7 @@ const Navbar = () => {
         <p className="blue-gradient_text">Magic Mona</p>
       </NavLink>
 
-      <nav className="flex text-lg gap-7 font-medium">
+      <nav className="flex text-lg sm:gap-7 font-medium gap-3">
         <NavLink
           to="/about"
           className={({ isActive }) =>
@@ -27,6 +28,16 @@ const Navbar = () => {
           }
         >
           Projects
+        </NavLink>
+        <NavLink
+          to={cv}
+          className={({ isActive }) =>
+            isActive ? "text-blue-500" : "text-black"
+          }
+          target="_blank" 
+          download="Mona-Magdy-Resume"
+        >
+          CV
         </NavLink>
       </nav>
     </header>
