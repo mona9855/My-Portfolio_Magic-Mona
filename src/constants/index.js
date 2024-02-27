@@ -15,6 +15,8 @@ import {
     redux,
     sass,
     tailwindcss,
+    company1,
+    freelancer,
 } from "../assets/icons";
 
 import {
@@ -77,22 +79,35 @@ export const skills = [
     
 ];
 
-// export const experiences = [
-//     {
-//         title: "",
-//         company_name: "",
-//         icon: null,
-//         iconBg: "#accbe1",
-//         date: "March 2020 - April 2021",
-//         points: [
-//             "Developing and maintaining web applications using React.js and other related technologies.",
-//             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//             "Implementing responsive design and ensuring cross-browser compatibility.",
-//             "Participating in code reviews and providing constructive feedback to other developers.",
-//         ],
-//     },
+export const experiences = [
+    {
+        title: "Remote frontend developer",
+        company_name: "Logic Designs",
+        icon: company1,
+        iconBg: "#accbe1",
+        date: "February 2023 - July 2023",
+        points: [
+            "Translated complex design requirements into interactive user experiences to promote customer engagement and drive web traffic.",
+            "Built and tested application functionality to ensure a desirable user experience across all platforms.",
+            "Optimized page elements to reduce loading time and debugged code to ensure cross-browser usability.",
+            "Successfully collaborated with other developers and designers to continually expand application capabilities.",
+        ],
+    },
+
+    {
+        title: "Freelancer frontend developer",
+        company_name: "",
+        icon: freelancer,
+        iconBg: "#accbe1",
+        date: "July 2023 - now",
+        points: [
+            "Learned new tools such as 'Tailwind CSS', 'EmailJS', 'Framer Motion' and 'Three JS'.",
+            "Build amazing websites, which you can find in my Projects section.",
+            "I am still learning new tools everyday, and working on myself to be better and be the best version of me.",   
+        ],
+    },
     
-// ];
+];
 
 export const socialLinks = [
     {

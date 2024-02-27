@@ -17,8 +17,13 @@ import shirt from './shirt.png'
 import gpt from './gpt.png'
 import gym from './gym.svg'
 import arrow from './arrow.svg'
+import company1 from '../icons/company1.jpeg'
+import freelancer from '../icons/freelancer.png'
+
 
 export {
+    company1,
+    freelancer,
     shirt,
     gpt,
     gym,
