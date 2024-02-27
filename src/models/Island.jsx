@@ -45,6 +45,7 @@ const Island = ({isRotating, setIsRotating, setCurrentStage ,...props}) => {
     e.preventDefault();
 
     if(isRotating) {
+    
       const clientX = e.touches ? e.touches[0].clientX : e.clientX;
     const delta = (clientX - lastX.current) / viewport.width;
 
@@ -55,10 +56,7 @@ const Island = ({isRotating, setIsRotating, setCurrentStage ,...props}) => {
   }
 
   const handleKeyDown = (e) => {
-    if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
-      e.stopPropagation();
-    }
-
+   
     if(e.key === 'ArrowLeft') {
       if(!isRotating) setIsRotating(true);
       islandRef.current.rotation.y += 0.01 * Math.PI;
@@ -131,7 +129,7 @@ const Island = ({isRotating, setIsRotating, setCurrentStage ,...props}) => {
   }, [gl, handlePointerDown, handlePointerUp, handlePointerMove])
 
   return (
-    <a.group {...props} ref={islandRef}>
+    <a.group {...props} ref={islandRef} onTouchStart={handlePointerMove}>
       <mesh
         geometry={nodes.polySurface944_tree_body_0.geometry}
         material={materials.PaletteMaterial001}
