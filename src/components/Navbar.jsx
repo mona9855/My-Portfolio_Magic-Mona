@@ -16,7 +16,7 @@ const Navbar = () => {
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            isActive ? "text-blue-500" : "text-black"
+            isActive ? "text-blue-500" : "text-white"
           }
         >
           About
@@ -24,7 +24,7 @@ const Navbar = () => {
         <NavLink
           to="/projects"
           className={({ isActive }) =>
-            isActive ? "text-blue-500" : "text-black"
+            isActive ? "text-blue-500" : "text-white"
           }
         >
           Projects
@@ -32,11 +32,10 @@ const Navbar = () => {
         <NavLink
           to={cv}
           className={({ isActive }) =>
-            isActive ? "text-blue-500" : "text-black"
+            isActive ? "text-blue-500" : "text-white"
           }
           target="_blank" 
-          rel='noopener noreferrer'
-          // download="Mona-Magdy-Resume"
+          
         >
           CV
         </NavLink>
