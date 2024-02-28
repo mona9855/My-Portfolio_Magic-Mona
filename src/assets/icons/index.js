@@ -19,9 +19,11 @@ import gym from './gym.svg'
 import arrow from './arrow.svg'
 import company1 from '../icons/company1.jpeg'
 import freelancer from '../icons/freelancer.png'
+import university from '../icons/university.jpg'
 
 
 export {
+    university,
     company1,
     freelancer,
     shirt,

@@ -17,6 +17,7 @@ import {
     tailwindcss,
     company1,
     freelancer,
+    university,
 } from "../assets/icons";
 
 import {
@@ -80,11 +81,25 @@ export const skills = [
 ];
 
 export const experiences = [
+    
+
+    {
+        title: "Freelancer frontend developer",
+        company_name: "",
+        icon: freelancer,
+        iconBg: "#58eb34",
+        date: "July 2023 - now",
+        points: [
+            "Learned new tools such as 'Tailwind CSS', 'EmailJS', 'Framer Motion' and 'Three JS'.",
+            "Build amazing websites, which you can find in my Projects section.",
+            "I am still learning new tools everyday, and working on myself to be better and be the best version of me.",   
+        ],
+    },
     {
         title: "Remote frontend developer",
         company_name: "Logic Designs",
         icon: company1,
-        iconBg: "#accbe1",
+        iconBg: "#34ebd2",
         date: "February 2023 - July 2023",
         points: [
             "Translated complex design requirements into interactive user experiences to promote customer engagement and drive web traffic.",
@@ -93,17 +108,14 @@ export const experiences = [
             "Successfully collaborated with other developers and designers to continually expand application capabilities.",
         ],
     },
-
     {
-        title: "Freelancer frontend developer",
-        company_name: "",
-        icon: freelancer,
-        iconBg: "#accbe1",
-        date: "July 2023 - now",
+        title: "Electronics and Communication Engineer",
+        company_name: "Faculty of Engineering, Zagazig University",
+        icon: university,
+        iconBg: "#ebd834",
+        date: "May 2014 - May 2019",
         points: [
-            "Learned new tools such as 'Tailwind CSS', 'EmailJS', 'Framer Motion' and 'Three JS'.",
-            "Build amazing websites, which you can find in my Projects section.",
-            "I am still learning new tools everyday, and working on myself to be better and be the best version of me.",   
+            "Graduated from faculty of Engineering.",
         ],
     },
     
