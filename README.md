@@ -20,6 +20,8 @@
 
 - Screenshot of it:
   
-![home](https://github.com/mona9855/My-Portfolio_Magic-Mona/assets/89538929/d7a4aefc-6d89-4aa5-8ba9-b5abd8c9fcdc)
-![about](https://github.com/mona9855/My-Portfolio_Magic-Mona/assets/89538929/449d49e4-f67c-4bcd-9d1e-c6e534382efa)
-![contact](https://github.com/mona9855/My-Portfolio_Magic-Mona/assets/89538929/13f5424b-606b-440b-b23d-ee7c23ce582e)
+![home](https://github.com/mona9855/My-Portfolio_Magic-Mona/assets/89538929/1d6e4a9e-079c-4bd8-af23-563c88c4b38b)
+![about](https://github.com/mona9855/My-Portfolio_Magic-Mona/assets/89538929/2e04c434-da31-4602-a4bc-e045f9f5cbc5)
+![projects](https://github.com/mona9855/My-Portfolio_Magic-Mona/assets/89538929/b92458e1-bb18-4984-85dc-363a9373e631)
+![contact](https://github.com/mona9855/My-Portfolio_Magic-Mona/assets/89538929/999b6fae-b223-4ccb-a0ab-b6cdbffd2db5)
+
