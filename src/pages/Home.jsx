@@ -106,7 +106,7 @@ const Home = () => {
         </Suspense>
       </Canvas>
 
-      <div className="absolute bottom-[12vh] left-2 animate__animated animate__bounceIn ">
+      <div className="absolute bottom-[10vh] left-2 animate__animated animate__bounceIn ">
         <img src={!isPlayingMusic ? soundoff : soundon} alt="sound" 
         className="w-10 h-10 cursor-pointer object-contain mb-1.5"
         onClick={() => setIsPlayingMusic(!isPlayingMusic)}/>
@@ -114,7 +114,7 @@ const Home = () => {
         <span className="sm:inline hidden">🎵</span>Play Me<span className="sm:inline hidden">🎵</span>
         </span>
       </div>
-      <div className="absolute bottom-[12vh] sm:left-[40vw] left-[25vw] px-2 py-1 rounded text-black neo-brutalism-white animate__animated animate__heartBeat">
+      <div className="absolute bottom-[10vh] sm:left-[40vw] left-[25vw] px-2 py-1 rounded text-black neo-brutalism-white animate__animated animate__heartBeat">
         <p className="sm:text-lg text-base">⬅️Scroll to view more.➡️</p>
       </div>
     </section>
