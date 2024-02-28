@@ -115,7 +115,7 @@ const Home = () => {
         </span>
       </div>
       <div className="absolute bottom-[12vh] sm:left-[40vw] left-[25vw] px-2 py-1 rounded text-black neo-brutalism-white animate__animated animate__heartBeat">
-        <p className="sm:text-base text-sm">⬅️Scroll to view more.➡️</p>
+        <p className="sm:text-lg text-base">⬅️Scroll to view more.➡️</p>
       </div>
     </section>
   );
