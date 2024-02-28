@@ -35,6 +35,7 @@ const Navbar = () => {
             isActive ? "text-blue-500" : "text-black"
           }
           target="_blank" 
+          rel='noopener noreferrer'
           // download="Mona-Magdy-Resume"
         >
           CV
