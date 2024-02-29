@@ -16,7 +16,7 @@ const About = () => {
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-          Frontend developer with entry-level experience, based in Egypt, specialized in creating amazing
+          Frontend developer based in Egypt, specialized in creating amazing
           websites made with passion. Making efficient, user friendly and
           responsive websites is my number 1️⃣ goal.
         </p>
