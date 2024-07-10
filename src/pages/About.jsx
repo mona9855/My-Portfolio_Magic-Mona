@@ -148,6 +148,7 @@ const About = () => {
       {/* My Work Experience ends here */}
 
       <hr className="border-slate-200" />
+      <></>
       <CTA></CTA>
     </section>
   );
