@@ -6,6 +6,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import CTA from "../components/CTA";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const About = () => {
   return (
@@ -99,7 +100,8 @@ const About = () => {
 
                   {experience.projects && (
                     <h3 className="text-black !text-[14px] font-poppins font-semibold">
-                      ⮞ Projects:{" "}
+                      <MdKeyboardArrowRight className="inline-block text-2xl" />
+                      Projects:{" "}
                       <span className="font-normal !text-[13px] text-[#4B465C]">
                         &quot; {experience.projects} &quot;
                       </span>
@@ -109,7 +111,8 @@ const About = () => {
                   {experience?.projectDescription && (
                     <div>
                       <h3 className="text-black !text-[14px] font-poppins font-semibold">
-                        ⮞ Project Description:
+                        <MdKeyboardArrowRight className="inline-block text-2xl" />
+                        Project Description:
                       </h3>
                       {experience?.projectDescription?.map((item, index) => (
                         <p
@@ -125,7 +128,8 @@ const About = () => {
                   {experience?.points && (
                     <div>
                       <h3 className="text-black !text-[14px] font-poppins font-semibold">
-                        ⮞ Technologies Used:
+                        <MdKeyboardArrowRight className="inline-block text-2xl" />
+                        Technologies Used:
                       </h3>
                       <ol className="my-5 list-decimal ml-5 space-y-2" type="1">
                         {experience?.points?.map((point, index) => (
