@@ -116,7 +116,7 @@ const About = () => {
                       </h3>
                       {experience?.projectDescription?.map((item, index) => (
                         <p
-                          className="!text-[13px] font-normal !mt-0 text-[#4B465C]"
+                          className="!text-[13px] font-normal !mt-1 !mb-2 text-[#4B465C]"
                           key={index}
                         >
                           {item}
