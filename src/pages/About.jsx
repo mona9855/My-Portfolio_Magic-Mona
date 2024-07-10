@@ -67,12 +67,12 @@ const About = () => {
                     <img
                       src={experience.icon}
                       alt={experience.company_name}
-                      className="w-[60%] h-[60%] object-contain"
+                      className="w-[90%] h-[90%] object-contain"
                     />
                   </div>
                 }
                 iconStyle={{
-                  background: experience.iconBg,
+                  background: "#FFF",
                 }}
                 contentStyle={{
                   borderBottom: "8px",
@@ -81,27 +81,65 @@ const About = () => {
                   boxShadow: "none",
                 }}
               >
-                <div>
-                  <h3 className="text-black text-xl font-poppins font-semibold">
-                    {experience.title}
-                  </h3>
-                  <p
-                    className="text-black-500 font-medium font-base"
-                    style={{ margin: 0 }}
-                  >
-                    {experience.company_name}
-                  </p>
-                </div>
-                <ul className="my-5 list-disc ml-5 space-y-2">
-                  {experience.points.map((point, index) => (
-                    <li
-                      className="text-black-500/50 font-normal pl-1 text-sm"
-                      key={`experience-point-${index}`}
+                <div className="mt-5 flex flex-col gap-3">
+                  <div>
+                    <h3 className="text-black text-xl font-poppins font-semibold">
+                      {experience.title}
+                    </h3>
+                    <p
+                      className={` font-bold`}
+                      style={{ margin: 0, color: experience.iconBg }}
                     >
-                      {point}
-                    </li>
-                  ))}
-                </ul>
+                      {experience?.company_name}
+                    </p>
+                    <p className="!text-[13px] text-[#4B465C]">
+                      {experience?.companyDescription}
+                    </p>
+                  </div>
+
+                  {experience.projects && (
+                    <h3 className="text-black !text-[14px] font-poppins font-semibold">
+                      ⮞ Projects:{" "}
+                      <span className="font-normal !text-[13px] text-[#4B465C]">
+                        &quot; {experience.projects} &quot;
+                      </span>
+                    </h3>
+                  )}
+
+                  {experience?.projectDescription && (
+                    <div>
+                      <h3 className="text-black !text-[14px] font-poppins font-semibold">
+                        ⮞ Project Description:
+                      </h3>
+                      {experience?.projectDescription?.map((item, index) => (
+                        <p
+                          className="!text-[13px] font-normal !mt-0 text-[#4B465C]"
+                          key={index}
+                        >
+                          {item}
+                        </p>
+                      ))}
+                    </div>
+                  )}
+
+                  {experience?.points && (
+                    <div>
+                      <h3 className="text-black !text-[14px] font-poppins font-semibold">
+                        ⮞ Technologies Used:
+                      </h3>
+                      <ol className="my-5 list-decimal ml-5 space-y-2" type="1">
+                        {experience?.points?.map((point, index) => (
+                          <li
+                            className="text-[#4B465C] font-normal pl-1 !text-[13px]"
+                            key={`experience-point-${index}`}
+                          >
+                            {point}
+                          </li>
+                        ))}
+                      </ol>
+                    </div>
+                  )}
+                </div>
               </VerticalTimelineElement>
             ))}
           </VerticalTimeline>
